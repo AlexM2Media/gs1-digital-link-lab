@@ -9,12 +9,19 @@ button { cursor: pointer; }
 h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1; letter-spacing: 0; }
 h2 { margin: 24px 0 12px; font-size: 1rem; }
 .app-header p:not(.eyebrow) { margin: 11px 0 0; color: #51645f; }
+.catalog-link, .ai-info-link { color: #a33b26; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .8rem; font-weight: 700; }
+.catalog-link { display: inline-block; margin-top: 12px; }
 .language { display: grid; gap: 6px; color: #51645f; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .8rem; font-weight: 600; }
 .language select { min-width: 70px; }
 .tabs { display: flex; gap: 4px; border-bottom: 1px solid #b8c4bb; margin: 26px 0; }
 .tabs button { border: 0; background: none; color: #51645f; padding: 11px 15px; border-bottom: 3px solid transparent; font-family: ui-sans-serif, system-ui, sans-serif; font-weight: 700; }
 .tabs button[aria-selected='true'] { color: #17312d; border-color: #a33b26; }
 .workspace { background: #fffdf8; border: 1px solid #d6d3c9; padding: clamp(18px, 3vw, 30px); }
+.ai-picker { display: grid; grid-template-columns: minmax(180px, 1fr) minmax(180px, 2fr) auto; gap: 10px; border-top: 1px solid #d6d3c9; margin-top: 22px; padding-top: 20px; }
+.selected-ai-fields { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.ai-picker button { border: 1px solid #17312d; border-radius: 3px; background: #fff; color: #17312d; padding: 8px 12px; font-weight: 700; }
+.ai-info-link { align-self: center; white-space: nowrap; }
+.generic-warning { color: #8b6414; font-size: .78rem; }
 .form-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 label { display: grid; gap: 7px; color: #28413b; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .86rem; font-weight: 700; }
 label.wide { grid-column: span 3; }
@@ -40,4 +47,4 @@ input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-
 .analysis-output dl { display: grid; grid-template-columns: max-content 1fr; margin: 0; background: #fffdf8; border: 1px solid #d6d3c9; }
 .analysis-output dt, .analysis-output dd { margin: 0; padding: 9px 12px; border-bottom: 1px solid #e6e1d6; font-family: ui-monospace, Consolas, monospace; font-size: .84rem; }
 .analysis-output dt { font-weight: 700; background: #f0ede4; }
-@media (max-width: 720px) { .app-shell { padding-top: 22px; } .app-header { flex-direction: column; } .form-grid { grid-template-columns: 1fr; } label.wide { grid-column: auto; } .tabs { overflow-x: auto; } .tabs button { white-space: nowrap; } }
+@media (max-width: 720px) { .app-shell { padding-top: 22px; } .app-header { flex-direction: column; } .form-grid, .selected-ai-fields { grid-template-columns: 1fr; } label.wide { grid-column: auto; } .ai-picker { grid-template-columns: 1fr; } .tabs { overflow-x: auto; } .tabs button { white-space: nowrap; } }

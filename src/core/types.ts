@@ -2,6 +2,8 @@ export type AiRole = 'primary' | 'qualifier' | 'attribute'
 
 export type AiValueType = 'numeric' | 'alphanumeric' | 'date' | 'decimal'
 
+export type AiGenerationSupport = 'strict' | 'generic'
+
 export interface AiLength {
   readonly kind: 'fixed' | 'variable'
   readonly min: number
@@ -25,12 +27,16 @@ export interface AiDefinition {
     readonly es: string
     readonly en: string
   }
+  readonly dataTitle?: string
   readonly valueType: AiValueType
   readonly length: AiLength
   readonly implicitDecimals?: number
   readonly role: AiRole
   readonly validation: AiValidationRules
   readonly serialization: AiSerializationRules
+  readonly category?: string
+  readonly generationSupport?: AiGenerationSupport
+  readonly requiresFnc1?: boolean
 }
 
 export interface PrimaryIdentifier {

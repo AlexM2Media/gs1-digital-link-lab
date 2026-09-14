@@ -1,0 +1,542 @@
+AI;Descripción;Titulo
+0;Código Seriado de Contenedor de Embarque (SSCC);SSCC
+1;Número Global de Artículo Comercial (GTIN);GTIN
+2;GTIN de los artículos comerciales contenidos;CONTENT
+3;Identificación de un artículo comercial (GTIN) Hecho a la Medida (MtO por sus siglas en inglés) o personalizado.;MTO GTIN
+10;Lote o número de lote;BATCH/LOT
+11;Fecha de producción (AAMMDD);PROD DATE
+12;Fecha de vencimiento de pago (AAMMDD);DUE DATE
+13;Fecha de envasado (AAMMDD);PACK DATE
+15;Fecha de consumo preferente (AAMMDD);BEST BEFORE or BEST BY
+16;Última fecha de venta (AAMMDD);SELL BY
+17;Fecha de vencimiento (AAMMDD);USE BY or EXPIRY
+20;Variante de producto interno;VARIANT
+21;Número de serie;SERIAL
+22;Variante de producto de consumo;CPV
+235;Extensión serializada controlada de GTIN de terceros (TPX);TPX
+240;Identificación de producto adicional asignado por el fabricante;ADDITIONAL ID
+241;Número de pieza del cliente;CUST. PART No.
+242;Número de variación de “mandado a hacer”;MTO VARIANT
+243;Número de componente de empaque;PCN
+250;Número de serie secundario;SECONDARY SERIAL
+251;Referencia a la entidad de origen;REF. TO SOURCE
+253;Identificador de tipo de documento global (GDTI);GDTI
+254;Componente de extensión del GLN;GLN EXTENSION COMPONENT
+255;Número de cupón global (GCN);GCN
+30;Conteo variable de artículos (artículo comercial de medidas variables);VAR. COUNT
+3100;Peso neto, kilogramos (artículo comercial de medidas variables);NET WEIGHT (kg)
+3101;Peso neto, kilogramos (artículo comercial de medidas variables);NET WEIGHT (kg)
+3102;Peso neto, kilogramos (artículo comercial de medidas variables);NET WEIGHT (kg)
+3103;Peso neto, kilogramos (artículo comercial de medidas variables);NET WEIGHT (kg)
+3104;Peso neto, kilogramos (artículo comercial de medidas variables);NET WEIGHT (kg)
+3105;Peso neto, kilogramos (artículo comercial de medidas variables);NET WEIGHT (kg)
+3110;Longitud o primera dimensión, metros (artículo comercial de medidas variables);LENGTH (m)
+3111;Longitud o primera dimensión, metros (artículo comercial de medidas variables);LENGTH (m)
+3112;Longitud o primera dimensión, metros (artículo comercial de medidas variables);LENGTH (m)
+3113;Longitud o primera dimensión, metros (artículo comercial de medidas variables);LENGTH (m)
+3114;Longitud o primera dimensión, metros (artículo comercial de medidas variables);LENGTH (m)
+3115;Longitud o primera dimensión, metros (artículo comercial de medidas variables);LENGTH (m)
+3120;Ancho, diámetro, o segunda dimensión, metros (artículo comercial de medidas variables);WIDTH (m)
+3121;Ancho, diámetro, o segunda dimensión, metros (artículo comercial de medidas variables);WIDTH (m)
+3122;Ancho, diámetro, o segunda dimensión, metros (artículo comercial de medidas variables);WIDTH (m)
+3123;Ancho, diámetro, o segunda dimensión, metros (artículo comercial de medidas variables);WIDTH (m)
+3124;Ancho, diámetro, o segunda dimensión, metros (artículo comercial de medidas variables);WIDTH (m)
+3125;Ancho, diámetro, o segunda dimensión, metros (artículo comercial de medidas variables);WIDTH (m)
+3130;Profundidad, grosor, altura, o tercera dimensión, metros (artículo comercial de medidas variables);HEIGHT (m)
+3131;Profundidad, grosor, altura, o tercera dimensión, metros (artículo comercial de medidas variables);HEIGHT (m)
+3132;Profundidad, grosor, altura, o tercera dimensión, metros (artículo comercial de medidas variables);HEIGHT (m)
+3133;Profundidad, grosor, altura, o tercera dimensión, metros (artículo comercial de medidas variables);HEIGHT (m)
+3134;Profundidad, grosor, altura, o tercera dimensión, metros (artículo comercial de medidas variables);HEIGHT (m)
+3135;Profundidad, grosor, altura, o tercera dimensión, metros (artículo comercial de medidas variables);HEIGHT (m)
+3140;Área, metros cuadrados (artículo comercial de medidas variables);AREA (m²)
+3141;Área, metros cuadrados (artículo comercial de medidas variables);AREA (m²)
+3142;Área, metros cuadrados (artículo comercial de medidas variables);AREA (m²)
+3143;Área, metros cuadrados (artículo comercial de medidas variables);AREA (m²)
+3144;Área, metros cuadrados (artículo comercial de medidas variables);AREA (m²)
+3145;Área, metros cuadrados (artículo comercial de medidas variables);AREA (m²)
+3150;Volumen neto, litros (artículo comercial de medidas variables);NET VOLUME (l)
+3151;Volumen neto, litros (artículo comercial de medidas variables);NET VOLUME (l)
+3152;Volumen neto, litros (artículo comercial de medidas variables);NET VOLUME (l)
+3153;Volumen neto, litros (artículo comercial de medidas variables);NET VOLUME (l)
+3154;Volumen neto, litros (artículo comercial de medidas variables);NET VOLUME (l)
+3155;Volumen neto, litros (artículo comercial de medidas variables);NET VOLUME (l)
+3160;Volumen neto, metros cúbicos (artículo comercial de medidas variables);NET VOLUME (m³)
+3161;Volumen neto, metros cúbicos (artículo comercial de medidas variables);NET VOLUME (m³)
+3162;Volumen neto, metros cúbicos (artículo comercial de medidas variables);NET VOLUME (m³)
+3163;Volumen neto, metros cúbicos (artículo comercial de medidas variables);NET VOLUME (m³)
+3164;Volumen neto, metros cúbicos (artículo comercial de medidas variables);NET VOLUME (m³)
+3165;Volumen neto, metros cúbicos (artículo comercial de medidas variables);NET VOLUME (m³)
+3200;Peso neto, libras (artículo comercial de medidas variables);NET WEIGHT (lb)
+3201;Peso neto, libras (artículo comercial de medidas variables);NET WEIGHT (lb)
+3202;Peso neto, libras (artículo comercial de medidas variables);NET WEIGHT (lb)
+3203;Peso neto, libras (artículo comercial de medidas variables);NET WEIGHT (lb)
+3204;Peso neto, libras (artículo comercial de medidas variables);NET WEIGHT (lb)
+3205;Peso neto, libras (artículo comercial de medidas variables);NET WEIGHT (lb)
+3210;Longitud o primera dimensión, pulgadas (artículo comercial de medidas variables);LENGTH (in)
+3211;Longitud o primera dimensión, pulgadas (artículo comercial de medidas variables);LENGTH (in)
+3212;Longitud o primera dimensión, pulgadas (artículo comercial de medidas variables);LENGTH (in)
+3213;Longitud o primera dimensión, pulgadas (artículo comercial de medidas variables);LENGTH (in)
+3214;Longitud o primera dimensión, pulgadas (artículo comercial de medidas variables);LENGTH (in)
+3215;Longitud o primera dimensión, pulgadas (artículo comercial de medidas variables);LENGTH (in)
+3220;Longitud o primera dimensión, pies (artículo comercial de medidas variables);LENGTH (ft)
+3221;Longitud o primera dimensión, pies (artículo comercial de medidas variables);LENGTH (ft)
+3222;Longitud o primera dimensión, pies (artículo comercial de medidas variables);LENGTH (ft)
+3223;Longitud o primera dimensión, pies (artículo comercial de medidas variables);LENGTH (ft)
+3224;Longitud o primera dimensión, pies (artículo comercial de medidas variables);LENGTH (ft)
+3225;Longitud o primera dimensión, pies (artículo comercial de medidas variables);LENGTH (ft)
+3230;Longitud o primera dimensión, yardas (artículo comercial de medidas variables);LENGTH (yd)
+3231;Longitud o primera dimensión, yardas (artículo comercial de medidas variables);LENGTH (yd)
+3232;Longitud o primera dimensión, yardas (artículo comercial de medidas variables);LENGTH (yd)
+3233;Longitud o primera dimensión, yardas (artículo comercial de medidas variables);LENGTH (yd)
+3234;Longitud o primera dimensión, yardas (artículo comercial de medidas variables);LENGTH (yd)
+3235;Longitud o primera dimensión, yardas (artículo comercial de medidas variables);LENGTH (yd)
+3240;Ancho, diámetro, o segunda dimensión, pulgadas (artículo comercial de medidas variables);WIDTH (in)
+3241;Ancho, diámetro, o segunda dimensión, pulgadas (artículo comercial de medidas variables);WIDTH (in)
+3242;Ancho, diámetro, o segunda dimensión, pulgadas (artículo comercial de medidas variables);WIDTH (in)
+3243;Ancho, diámetro, o segunda dimensión, pulgadas (artículo comercial de medidas variables);WIDTH (in)
+3244;Ancho, diámetro, o segunda dimensión, pulgadas (artículo comercial de medidas variables);WIDTH (in)
+3245;Ancho, diámetro, o segunda dimensión, pulgadas (artículo comercial de medidas variables);WIDTH (in)
+3250;Ancho, diámetro, o segunda dimensión, pies (artículo comercial de medidas variables);WIDTH (ft)
+3251;Ancho, diámetro, o segunda dimensión, pies (artículo comercial de medidas variables);WIDTH (ft)
+3252;Ancho, diámetro, o segunda dimensión, pies (artículo comercial de medidas variables);WIDTH (ft)
+3253;Ancho, diámetro, o segunda dimensión, pies (artículo comercial de medidas variables);WIDTH (ft)
+3254;Ancho, diámetro, o segunda dimensión, pies (artículo comercial de medidas variables);WIDTH (ft)
+3255;Ancho, diámetro, o segunda dimensión, pies (artículo comercial de medidas variables);WIDTH (ft)
+3260;Ancho, diámetro, o segunda dimensión, yardas (artículo comercial de medidas variables);WIDTH (yd)
+3261;Ancho, diámetro, o segunda dimensión, yardas (artículo comercial de medidas variables);WIDTH (yd)
+3262;Ancho, diámetro, o segunda dimensión, yardas (artículo comercial de medidas variables);WIDTH (yd)
+3263;Ancho, diámetro, o segunda dimensión, yardas (artículo comercial de medidas variables);WIDTH (yd)
+3264;Ancho, diámetro, o segunda dimensión, yardas (artículo comercial de medidas variables);WIDTH (yd)
+3265;Ancho, diámetro, o segunda dimensión, yardas (artículo comercial de medidas variables);WIDTH (yd)
+3270;Profundidad, grosor, altura, o tercera dimensión, pulgadas (artículo comercial de medidas variables);HEIGHT (in)
+3271;Profundidad, grosor, altura, o tercera dimensión, pulgadas (artículo comercial de medidas variables);HEIGHT (in)
+3272;Profundidad, grosor, altura, o tercera dimensión, pulgadas (artículo comercial de medidas variables);HEIGHT (in)
+3273;Profundidad, grosor, altura, o tercera dimensión, pulgadas (artículo comercial de medidas variables);HEIGHT (in)
+3274;Profundidad, grosor, altura, o tercera dimensión, pulgadas (artículo comercial de medidas variables);HEIGHT (in)
+3275;Profundidad, grosor, altura, o tercera dimensión, pulgadas (artículo comercial de medidas variables);HEIGHT (in)
+3280;Profundidad, grosor, altura o tercera dimensión, pies (artículo comercial de medidas variables);HEIGHT (ft)
+3281;Profundidad, grosor, altura o tercera dimensión, pies (artículo comercial de medidas variables);HEIGHT (ft)
+3282;Profundidad, grosor, altura o tercera dimensión, pies (artículo comercial de medidas variables);HEIGHT (ft)
+3283;Profundidad, grosor, altura o tercera dimensión, pies (artículo comercial de medidas variables);HEIGHT (ft)
+3284;Profundidad, grosor, altura o tercera dimensión, pies (artículo comercial de medidas variables);HEIGHT (ft)
+3285;Profundidad, grosor, altura o tercera dimensión, pies (artículo comercial de medidas variables);HEIGHT (ft)
+3290;Profundidad, grosor, altura, o tercera dimensión, yardas (artículo comercial de medidas variables);HEIGHT (yd)
+3291;Profundidad, grosor, altura, o tercera dimensión, yardas (artículo comercial de medidas variables);HEIGHT (yd)
+3292;Profundidad, grosor, altura, o tercera dimensión, yardas (artículo comercial de medidas variables);HEIGHT (yd)
+3293;Profundidad, grosor, altura, o tercera dimensión, yardas (artículo comercial de medidas variables);HEIGHT (yd)
+3294;Profundidad, grosor, altura, o tercera dimensión, yardas (artículo comercial de medidas variables);HEIGHT (yd)
+3295;Profundidad, grosor, altura, o tercera dimensión, yardas (artículo comercial de medidas variables);HEIGHT (yd)
+3300;Peso logístico, kilogramos;GROSS WEIGHT (kg)
+3301;Peso logístico, kilogramos;GROSS WEIGHT (kg)
+3302;Peso logístico, kilogramos;GROSS WEIGHT (kg)
+3303;Peso logístico, kilogramos;GROSS WEIGHT (kg)
+3304;Peso logístico, kilogramos;GROSS WEIGHT (kg)
+3305;Peso logístico, kilogramos;GROSS WEIGHT (kg)
+3310;Longitud o primera dimensión, metros;LENGTH (m), log
+3311;Longitud o primera dimensión, metros;LENGTH (m), log
+3312;Longitud o primera dimensión, metros;LENGTH (m), log
+3313;Longitud o primera dimensión, metros;LENGTH (m), log
+3314;Longitud o primera dimensión, metros;LENGTH (m), log
+3315;Longitud o primera dimensión, metros;LENGTH (m), log
+3320;Ancho, diámetro, o segunda dimensión, metros;WIDTH (m), log
+3321;Ancho, diámetro, o segunda dimensión, metros;WIDTH (m), log
+3322;Ancho, diámetro, o segunda dimensión, metros;WIDTH (m), log
+3323;Ancho, diámetro, o segunda dimensión, metros;WIDTH (m), log
+3324;Ancho, diámetro, o segunda dimensión, metros;WIDTH (m), log
+3325;Ancho, diámetro, o segunda dimensión, metros;WIDTH (m), log
+3330;Profundidad, grosor, altura, o tercera dimensión, metros;HEIGHT (m), log
+3331;Profundidad, grosor, altura, o tercera dimensión, metros;HEIGHT (m), log
+3332;Profundidad, grosor, altura, o tercera dimensión, metros;HEIGHT (m), log
+3333;Profundidad, grosor, altura, o tercera dimensión, metros;HEIGHT (m), log
+3334;Profundidad, grosor, altura, o tercera dimensión, metros;HEIGHT (m), log
+3335;Profundidad, grosor, altura, o tercera dimensión, metros;HEIGHT (m), log
+3340;Área, metros cuadrados;AREA (m²), log
+3341;Área, metros cuadrados;AREA (m²), log
+3342;Área, metros cuadrados;AREA (m²), log
+3343;Área, metros cuadrados;AREA (m²), log
+3344;Área, metros cuadrados;AREA (m²), log
+3345;Área, metros cuadrados;AREA (m²), log
+3350;Volumen logístico, litros;VOLUME (l), log
+3351;Volumen logístico, litros;VOLUME (l), log
+3352;Volumen logístico, litros;VOLUME (l), log
+3353;Volumen logístico, litros;VOLUME (l), log
+3354;Volumen logístico, litros;VOLUME (l), log
+3355;Volumen logístico, litros;VOLUME (l), log
+3360;Volumen logístico, metros cúbicos;VOLUME (m³), log
+3361;Volumen logístico, metros cúbicos;VOLUME (m³), log
+3362;Volumen logístico, metros cúbicos;VOLUME (m³), log
+3363;Volumen logístico, metros cúbicos;VOLUME (m³), log
+3364;Volumen logístico, metros cúbicos;VOLUME (m³), log
+3365;Volumen logístico, metros cúbicos;VOLUME (m³), log
+3370;Kilogramos por metro cuadrado;KG PER m²
+3371;Kilogramos por metro cuadrado;KG PER m²
+3372;Kilogramos por metro cuadrado;KG PER m²
+3373;Kilogramos por metro cuadrado;KG PER m²
+3374;Kilogramos por metro cuadrado;KG PER m²
+3375;Kilogramos por metro cuadrado;KG PER m²
+3400;Peso logístico, libras;GROSS WEIGHT (lb)
+3401;Peso logístico, libras;GROSS WEIGHT (lb)
+3402;Peso logístico, libras;GROSS WEIGHT (lb)
+3403;Peso logístico, libras;GROSS WEIGHT (lb)
+3404;Peso logístico, libras;GROSS WEIGHT (lb)
+3405;Peso logístico, libras;GROSS WEIGHT (lb)
+3410;Longitud o primera dimensión, pulgadas;LENGTH (in), log
+3411;Longitud o primera dimensión, pulgadas;LENGTH (in), log
+3412;Longitud o primera dimensión, pulgadas;LENGTH (in), log
+3413;Longitud o primera dimensión, pulgadas;LENGTH (in), log
+3414;Longitud o primera dimensión, pulgadas;LENGTH (in), log
+3415;Longitud o primera dimensión, pulgadas;LENGTH (in), log
+3420;Longitud o primera dimensión, pies;LENGTH (ft), log
+3421;Longitud o primera dimensión, pies;LENGTH (ft), log
+3422;Longitud o primera dimensión, pies;LENGTH (ft), log
+3423;Longitud o primera dimensión, pies;LENGTH (ft), log
+3424;Longitud o primera dimensión, pies;LENGTH (ft), log
+3425;Longitud o primera dimensión, pies;LENGTH (ft), log
+3430;Longitud o primera dimensión, yardas;LENGTH (yd), log
+3431;Longitud o primera dimensión, yardas;LENGTH (yd), log
+3432;Longitud o primera dimensión, yardas;LENGTH (yd), log
+3433;Longitud o primera dimensión, yardas;LENGTH (yd), log
+3434;Longitud o primera dimensión, yardas;LENGTH (yd), log
+3435;Longitud o primera dimensión, yardas;LENGTH (yd), log
+3440;Ancho, diámetro, o segunda dimensión, pulgadas;WIDTH (in), log
+3441;Ancho, diámetro, o segunda dimensión, pulgadas;WIDTH (in), log
+3442;Ancho, diámetro, o segunda dimensión, pulgadas;WIDTH (in), log
+3443;Ancho, diámetro, o segunda dimensión, pulgadas;WIDTH (in), log
+3444;Ancho, diámetro, o segunda dimensión, pulgadas;WIDTH (in), log
+3445;Ancho, diámetro, o segunda dimensión, pulgadas;WIDTH (in), log
+3450;Ancho, diámetro, o segunda dimensión, pies;WIDTH (ft), log
+3451;Ancho, diámetro, o segunda dimensión, pies;WIDTH (ft), log
+3452;Ancho, diámetro, o segunda dimensión, pies;WIDTH (ft), log
+3453;Ancho, diámetro, o segunda dimensión, pies;WIDTH (ft), log
+3454;Ancho, diámetro, o segunda dimensión, pies;WIDTH (ft), log
+3455;Ancho, diámetro, o segunda dimensión, pies;WIDTH (ft), log
+3460;Ancho, diámetro, o segunda dimensión, yardas;WIDTH (yd), log
+3461;Ancho, diámetro, o segunda dimensión, yardas;WIDTH (yd), log
+3462;Ancho, diámetro, o segunda dimensión, yardas;WIDTH (yd), log
+3463;Ancho, diámetro, o segunda dimensión, yardas;WIDTH (yd), log
+3464;Ancho, diámetro, o segunda dimensión, yardas;WIDTH (yd), log
+3465;Ancho, diámetro, o segunda dimensión, yardas;WIDTH (yd), log
+3470;Profundidad, grosor, altura, o tercera dimensión, pulgadas;HEIGHT (in), log
+3471;Profundidad, grosor, altura, o tercera dimensión, pulgadas;HEIGHT (in), log
+3472;Profundidad, grosor, altura, o tercera dimensión, pulgadas;HEIGHT (in), log
+3473;Profundidad, grosor, altura, o tercera dimensión, pulgadas;HEIGHT (in), log
+3474;Profundidad, grosor, altura, o tercera dimensión, pulgadas;HEIGHT (in), log
+3475;Profundidad, grosor, altura, o tercera dimensión, pulgadas;HEIGHT (in), log
+3480;Profundidad, grosor, altura o tercera dimensión, pies;HEIGHT (ft), log
+3481;Profundidad, grosor, altura o tercera dimensión, pies;HEIGHT (ft), log
+3482;Profundidad, grosor, altura o tercera dimensión, pies;HEIGHT (ft), log
+3483;Profundidad, grosor, altura o tercera dimensión, pies;HEIGHT (ft), log
+3484;Profundidad, grosor, altura o tercera dimensión, pies;HEIGHT (ft), log
+3485;Profundidad, grosor, altura o tercera dimensión, pies;HEIGHT (ft), log
+3490;Profundidad, grosor, altura, o tercera dimensión, yardas;HEIGHT (yd), log
+3491;Profundidad, grosor, altura, o tercera dimensión, yardas;HEIGHT (yd), log
+3492;Profundidad, grosor, altura, o tercera dimensión, yardas;HEIGHT (yd), log
+3493;Profundidad, grosor, altura, o tercera dimensión, yardas;HEIGHT (yd), log
+3494;Profundidad, grosor, altura, o tercera dimensión, yardas;HEIGHT (yd), log
+3495;Profundidad, grosor, altura, o tercera dimensión, yardas;HEIGHT (yd), log
+3500;Área, pulgadas cuadradas (artículo comercial de medidas variables);AREA (in²)
+3501;Área, pulgadas cuadradas (artículo comercial de medidas variables);AREA (in²)
+3502;Área, pulgadas cuadradas (artículo comercial de medidas variables);AREA (in²)
+3503;Área, pulgadas cuadradas (artículo comercial de medidas variables);AREA (in²)
+3504;Área, pulgadas cuadradas (artículo comercial de medidas variables);AREA (in²)
+3505;Área, pulgadas cuadradas (artículo comercial de medidas variables);AREA (in²)
+3510;Área, pies cuadrados (artículo comercial de medidas variables);AREA (ft²)
+3511;Área, pies cuadrados (artículo comercial de medidas variables);AREA (ft²)
+3512;Área, pies cuadrados (artículo comercial de medidas variables);AREA (ft²)
+3513;Área, pies cuadrados (artículo comercial de medidas variables);AREA (ft²)
+3514;Área, pies cuadrados (artículo comercial de medidas variables);AREA (ft²)
+3515;Área, pies cuadrados (artículo comercial de medidas variables);AREA (ft²)
+3520;Área, yardas cuadradas (artículo comercial de medidas variables);AREA (yd²)
+3521;Área, yardas cuadradas (artículo comercial de medidas variables);AREA (yd²)
+3522;Área, yardas cuadradas (artículo comercial de medidas variables);AREA (yd²)
+3523;Área, yardas cuadradas (artículo comercial de medidas variables);AREA (yd²)
+3524;Área, yardas cuadradas (artículo comercial de medidas variables);AREA (yd²)
+3525;Área, yardas cuadradas (artículo comercial de medidas variables);AREA (yd²)
+3530;Área, pulgadas cuadradas;AREA (in²), log
+3531;Área, pulgadas cuadradas;AREA (in²), log
+3532;Área, pulgadas cuadradas;AREA (in²), log
+3533;Área, pulgadas cuadradas;AREA (in²), log
+3534;Área, pulgadas cuadradas;AREA (in²), log
+3535;Área, pulgadas cuadradas;AREA (in²), log
+3540;Área, pies cuadrados;AREA (ft²), log
+3541;Área, pies cuadrados;AREA (ft²), log
+3542;Área, pies cuadrados;AREA (ft²), log
+3543;Área, pies cuadrados;AREA (ft²), log
+3544;Área, pies cuadrados;AREA (ft²), log
+3545;Área, pies cuadrados;AREA (ft²), log
+3550;Área, yardas cuadradas;AREA (yd²), log
+3551;Área, yardas cuadradas;AREA (yd²), log
+3552;Área, yardas cuadradas;AREA (yd²), log
+3553;Área, yardas cuadradas;AREA (yd²), log
+3554;Área, yardas cuadradas;AREA (yd²), log
+3555;Área, yardas cuadradas;AREA (yd²), log
+3560;Peso neto, onzas troy (artículo comercial de medidas variables);NET WEIGHT (troy oz)
+3561;Peso neto, onzas troy (artículo comercial de medidas variables);NET WEIGHT (troy oz)
+3562;Peso neto, onzas troy (artículo comercial de medidas variables);NET WEIGHT (troy oz)
+3563;Peso neto, onzas troy (artículo comercial de medidas variables);NET WEIGHT (troy oz)
+3564;Peso neto, onzas troy (artículo comercial de medidas variables);NET WEIGHT (troy oz)
+3565;Peso neto, onzas troy (artículo comercial de medidas variables);NET WEIGHT (troy oz)
+3570;Peso neto (o volumen), onzas (artículo comercial de medidas variables);NET VOLUME (oz)
+3571;Peso neto (o volumen), onzas (artículo comercial de medidas variables);NET VOLUME (oz)
+3572;Peso neto (o volumen), onzas (artículo comercial de medidas variables);NET VOLUME (oz)
+3573;Peso neto (o volumen), onzas (artículo comercial de medidas variables);NET VOLUME (oz)
+3574;Peso neto (o volumen), onzas (artículo comercial de medidas variables);NET VOLUME (oz)
+3575;Peso neto (o volumen), onzas (artículo comercial de medidas variables);NET VOLUME (oz)
+3600;Volumen neto, cuartos (artículo comercial de medidas variables);NET VOLUME (qt)
+3601;Volumen neto, cuartos (artículo comercial de medidas variables);NET VOLUME (qt)
+3602;Volumen neto, cuartos (artículo comercial de medidas variables);NET VOLUME (qt)
+3603;Volumen neto, cuartos (artículo comercial de medidas variables);NET VOLUME (qt)
+3604;Volumen neto, cuartos (artículo comercial de medidas variables);NET VOLUME (qt)
+3605;Volumen neto, cuartos (artículo comercial de medidas variables);NET VOLUME (qt)
+3610;Volumen neto, galones estadounidenses (artículo comercial de medidas variables);NET VOLUME (gal.)
+3611;Volumen neto, galones estadounidenses (artículo comercial de medidas variables);NET VOLUME (gal.)
+3612;Volumen neto, galones estadounidenses (artículo comercial de medidas variables);NET VOLUME (gal.)
+3613;Volumen neto, galones estadounidenses (artículo comercial de medidas variables);NET VOLUME (gal.)
+3614;Volumen neto, galones estadounidenses (artículo comercial de medidas variables);NET VOLUME (gal.)
+3615;Volumen neto, galones estadounidenses (artículo comercial de medidas variables);NET VOLUME (gal.)
+3620;Volumen logístico, cuartos;VOLUME (qt), log
+3621;Volumen logístico, cuartos;VOLUME (qt), log
+3622;Volumen logístico, cuartos;VOLUME (qt), log
+3623;Volumen logístico, cuartos;VOLUME (qt), log
+3624;Volumen logístico, cuartos;VOLUME (qt), log
+3625;Volumen logístico, cuartos;VOLUME (qt), log
+3630;Volumen logístico, galones estadounidenses;VOLUME (gal.), log
+3631;Volumen logístico, galones estadounidenses;VOLUME (gal.), log
+3632;Volumen logístico, galones estadounidenses;VOLUME (gal.), log
+3633;Volumen logístico, galones estadounidenses;VOLUME (gal.), log
+3634;Volumen logístico, galones estadounidenses;VOLUME (gal.), log
+3635;Volumen logístico, galones estadounidenses;VOLUME (gal.), log
+3640;Volumen neto, pulgadas cúbicas (artículo comercial de medidas variables);NET VOLUME (in³)
+3641;Volumen neto, pulgadas cúbicas (artículo comercial de medidas variables);NET VOLUME (in³)
+3642;Volumen neto, pulgadas cúbicas (artículo comercial de medidas variables);NET VOLUME (in³)
+3643;Volumen neto, pulgadas cúbicas (artículo comercial de medidas variables);NET VOLUME (in³)
+3644;Volumen neto, pulgadas cúbicas (artículo comercial de medidas variables);NET VOLUME (in³)
+3645;Volumen neto, pulgadas cúbicas (artículo comercial de medidas variables);NET VOLUME (in³)
+3650;Volumen neto, pies cúbicos (artículo comercial de medidas variables);NET VOLUME (ft³)
+3651;Volumen neto, pies cúbicos (artículo comercial de medidas variables);NET VOLUME (ft³)
+3652;Volumen neto, pies cúbicos (artículo comercial de medidas variables);NET VOLUME (ft³)
+3653;Volumen neto, pies cúbicos (artículo comercial de medidas variables);NET VOLUME (ft³)
+3654;Volumen neto, pies cúbicos (artículo comercial de medidas variables);NET VOLUME (ft³)
+3655;Volumen neto, pies cúbicos (artículo comercial de medidas variables);NET VOLUME (ft³)
+3660;Volumen neto, yardas cúbicas (artículo comercial de medidas variables);NET VOLUME (yd³)
+3661;Volumen neto, yardas cúbicas (artículo comercial de medidas variables);NET VOLUME (yd³)
+3662;Volumen neto, yardas cúbicas (artículo comercial de medidas variables);NET VOLUME (yd³)
+3663;Volumen neto, yardas cúbicas (artículo comercial de medidas variables);NET VOLUME (yd³)
+3664;Volumen neto, yardas cúbicas (artículo comercial de medidas variables);NET VOLUME (yd³)
+3665;Volumen neto, yardas cúbicas (artículo comercial de medidas variables);NET VOLUME (yd³)
+3670;Volumen Logistic, pulgadas cúbicas;VOLUME (in³), log
+3671;Volumen Logistic, pulgadas cúbicas;VOLUME (in³), log
+3672;Volumen Logistic, pulgadas cúbicas;VOLUME (in³), log
+3673;Volumen Logistic, pulgadas cúbicas;VOLUME (in³), log
+3674;Volumen Logistic, pulgadas cúbicas;VOLUME (in³), log
+3675;Volumen Logistic, pulgadas cúbicas;VOLUME (in³), log
+3680;Volumen logístico, de pies cúbicos;VOLUME (ft³), log
+3681;Volumen logístico, de pies cúbicos;VOLUME (ft³), log
+3682;Volumen logístico, de pies cúbicos;VOLUME (ft³), log
+3683;Volumen logístico, de pies cúbicos;VOLUME (ft³), log
+3684;Volumen logístico, de pies cúbicos;VOLUME (ft³), log
+3685;Volumen logístico, de pies cúbicos;VOLUME (ft³), log
+3690;Volumen logístico, yardas cúbicas;VOLUME (yd³), log
+3691;Volumen logístico, yardas cúbicas;VOLUME (yd³), log
+3692;Volumen logístico, yardas cúbicas;VOLUME (yd³), log
+3693;Volumen logístico, yardas cúbicas;VOLUME (yd³), log
+3694;Volumen logístico, yardas cúbicas;VOLUME (yd³), log
+3695;Volumen logístico, yardas cúbicas;VOLUME (yd³), log
+37;Conteo de artículos comerciales o piezas de artículos comerciales contenidos en una unidad logística;COUNT
+3900;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3901;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3902;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3903;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3904;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3905;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3906;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3907;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3908;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3909;Cantidad aplicable a pagar o valor de cupón/descuento, moneda local;AMOUNT
+3910;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3911;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3912;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3913;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3914;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3915;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3916;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3917;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3918;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3919;Cantidad aplicable a pagar con código de moneda ISO;AMOUNT
+3920;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3921;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3922;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3923;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3924;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3925;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3926;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3927;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3928;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3929;Importe aplicable a pagar, zona monetaria única (artículo comercial de medida variable);PRICE
+3930;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3931;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3932;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3933;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3934;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3935;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3936;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3937;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3938;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3939;Importe aplicable a pagar con código de moneda ISO (artículo comercial de medida variable);PRICE
+3940;Número de referencia de comprobante de pago;PRCNT OFF
+3941;Número de referencia de comprobante de pago;PRCNT OFF
+3942;Número de referencia de comprobante de pago;PRCNT OFF
+3943;Número de referencia de comprobante de pago;PRCNT OFF
+3950;Monto a pagar por unidad de medida, usa sólo un tipo de moneda (artículo comercial de medida variable);PRICE/UoM
+3951;Monto a pagar por unidad de medida, usa sólo un tipo de moneda (artículo comercial de medida variable);PRICE/UoM
+3952;Monto a pagar por unidad de medida, usa sólo un tipo de moneda (artículo comercial de medida variable);PRICE/UoM
+3953;Monto a pagar por unidad de medida, usa sólo un tipo de moneda (artículo comercial de medida variable);PRICE/UoM
+3954;Monto a pagar por unidad de medida, usa sólo un tipo de moneda (artículo comercial de medida variable);PRICE/UoM
+3955;Monto a pagar por unidad de medida, usa sólo un tipo de moneda (artículo comercial de medida variable);PRICE/UoM
+400;Número de orden de compra del cliente;ORDER NUMBER
+401;Número de Identificación Global para Consignación (GINC);GINC
+402;Número de Identificación Global de Envío (GSIN);GSIN
+403;Número/Código de ruta;ROUTE
+410;Enviar a / Enviar a Número Global de Localización;SHIP TO LOC
+411;Cobrar a / Facturar a Número Global de Localización;BILL TO
+412;Comprado de Número Global de Localización;PURCHASE FROM
+413;Enviar para / Entregar - Reenviar a Número Global de Localización;SHIP FOR LOC
+414;Identificación de un lugar físico - Número de Localización Global;LOC No.
+415;Número Global de Localización del emisor de la factura;PAY TO
+416;GLN del lugar de producción o servicio;PROD/SERV LOC
+417;Identificación de código de cupón sin papel para uso en América del Norte;PARTY
+420;Enviar a / Enviar a código postal dentro de una única autoridad postal;SHIP TO POST
+421;Enviar a / Enviar a código postal con código de país ISO;SHIP TO POST
+422;País de origen de un artículo comercial;ORIGIN
+423;País de procesamiento inicial;COUNTRY - INITIAL PROCESS
+424;País de procesamiento;COUNTRY - PROCESS
+425;País de desmontaje;COUNTRY - DISASSEMBLY
+426;País cubriendo cadena de proceso completa;COUNTRY - FULL PROCESS
+427;Subdivisión de país de origen;ORIGIN SUBDIVISION
+4300;Enviar a / Entregar a Nombre de la compañía;SHIP TO COMP
+4301;Enviar a / Entregar a Contacto;SHIP TO NAME
+4302;Enviar a / Entregar a Dirección línea 1;SHIP TO ADD1
+4303;Enviar a / Entregar a Dirección línea 2;SHIP TO ADD2
+4304;Enviar a / Entregar a colonia;SHIP TO SUB
+4305;Enviar a / Entregar a localidad;SHIP TO LOC
+4306;Enviar a / Entregar a región;SHIP TO REG
+4307;Enviar a / Entregar a código de país;SHIP TO COUNTRY
+4308;Enviar a / Entregar a número telefónico;SHIP TO PHONE
+4309;Enviar a / Entregar a la ubicación GEO;SHIP TO GEO
+4310;Devolver a Nombre de compañia;RTN TO COMP
+4311;Devolver a Nombre del contacto;RTN TO NAME
+4312;Devolver a Dirección línea 1;RTN TO ADD1
+4313;Devolver a Dirección línea 2;RTN TO ADD2
+4314;Devolver a colonia;RTN TO SUB
+4315;Devolver a localidad;RTN TO LOC
+4316;Devolver a código de región;RTN TO REG
+4317;Devolver a código de país;RTN TO COUNTRY
+4318;Devolver a Código postal;RTN TO POST
+4319;Devolver a número telefónico;RTN TO PHONE
+4320;Descripción del código de servicio;SRV DESCRIPTION
+4321;Aviso de mercancía peligrosa;DANGEROUS GOODS
+4322;Autorización para salir;AUTH LEAVE
+4323;Notificación que requiere firma;SIG REQUIRED
+4324;No entregar antes de Fecha (AAMMDDhhmm);NBEF DEL DT
+4325;No entregar después de Fecha (AAMMDDhhmm);NAFT DEL DT
+4326;Fecha de liberación (AAMMDD);REL DATE
+4330;Temperatura máxima en grados Fahrenheit;MAX TEMP F
+4331;Temperatura máxima en grados Celsius;MAX TEMP C
+4332;Temperatura mínima en grados Fahrenheit;MIN TEMP F
+4333;Temperatura mínima en grados Celsius;MIN TEMP C
+7001;OTAN Número de stock (NSN);NSN
+7002;ONU ECE clasificación de canales y cortes de carne;MEAT CUT
+7003;Fecha y hora de caducidad (AAAAMMDDhhmm);EXPIRY TIME
+7004;Potencia activa (AAMMDDhhmm);ACTIVE POTENCY
+7005;Zona de captura;CATCH AREA
+7006;Primera fecha de congelación (AAMMDD);FIRST FREEZE DATE
+7007;Fecha de cosecha ([AAMMDD[AAMMDD]);HARVEST DATE
+7008;Especies con fines pesqueros;AQUATIC SPECIES
+7009;Tipo de equipo de Pesca;FISHING GEAR TYPE
+7010;Método de producción;PROD METHOD
+7011;Próxima fecha de prueba (AAMMDD[hhmm]);TEST BY DATE
+7020;ID de lote remodelación;REFURB LOT
+7021;Estado funcional;FUNC STAT
+7022;Estado de revisión;REV STAT
+7023;Identificador Global de un Bien Individual (GIAI) de un ensamblado;GIAI - ASSEMBLY
+7030;Número de procesador con código de país ISO;PROCESSOR # 0
+7031;Número de procesador con código de país ISO;PROCESSOR # 1
+7032;Número de procesador con código de país ISO;PROCESSOR # 2
+7033;Número de procesador con código de país ISO;PROCESSOR # 3
+7034;Número de procesador con código de país ISO;PROCESSOR # 4
+7035;Número de procesador con código de país ISO;PROCESSOR # 5
+7036;Número de procesador con código de país ISO;PROCESSOR # 6
+7037;Número de procesador con código de país ISO;PROCESSOR # 7
+7038;Número de procesador con código de país ISO;PROCESSOR # 8
+7039;Número de procesador con código de país ISO;PROCESSOR # 9
+7040;GS1 UIC con extensión 1 e índice de Importador;UIC+EXT
+7041;UN/CEFACT freight unit type;UFRGT UNIT TYPE
+710;Número nacional de reembolso en Salud (NHRN) - PZN Alemania;NHRN PZN
+711;Número nacional de reembolso en Salud (NHRN) - CIP Francia;NHRN CIP
+712;Número nacional de reembolso en Salud (NHRN) - CN España;NHRN CN
+713;Número nacional de reembolso en Salud (NHRN) - DRN Brasil;NHRN DRN
+714;Número nacional de reembolso en Salud (NHRN) - AIM Portugal;NHRN AIM
+715;Número nacional de reembolso en Salud (NHRN) - NDC USA;NHRN NDC
+716;National Healthcare Reimbursement Number (NHRN) - Italy AIC;NHRN AIC
+717;National Healthcare Reimbursement Number (NHRN) - Costa Rica Sanitary Register Number;NHRN SRN
+7230;Referencia para la certificación;CERT # 0
+7231;Referencia para la certificación;CERT # 1
+7232;Referencia para la certificación;CERT # 2
+7233;Referencia para la certificación;CERT # 3
+7234;Referencia para la certificación;CERT # 4
+7235;Referencia para la certificación;CERT # 5
+7236;Referencia para la certificación;CERT # 6
+7237;Referencia para la certificación;CERT # 7
+7238;Referencia para la certificación;CERT # 8
+7239;Referencia para la certificación;CERT # 9
+7240;ID de protocolo;PROTOCOL
+7241;AIDC Trägertyp;AIDC MEDIA TYPE
+7242;Número de control de versión (VCN);VCN
+7250;Fecha de Nacimiento (AAAAMMDD);DOB
+7251;Fecha y hora de nacimiento (AAAAMMDDhhmm).;DOB TIME
+7252;Género biológico;BIO SEX
+7253;Apellido;FAMILY NAME
+7254;Nombre;GIVEN NAME
+7255;Grado familiar (ej. Jr., primero, segundo).;SUFFIX
+7256;Nombre completo;FULL NAME
+7257;Dirección;PERSON ADDR
+7258;Secuencia de Nacimiento en gestaciones múltiples (gemelos, trillizos, etc.);BIRTH SEQUENCE
+7259;Apellido familiar (ej. Fam. Rosas).;BABY
+8001;Productos en rollo (ancho, largo, diámetro del núcleo, dirección, empalmes);DIMENSIONS
+8002;Identificador de telefonía móvil celular;CMT No.
+8003;Identificador Global de Bien Retornable (GRAI);GRAI
+8004;Identificador Global de Bien Individual (GIAI);GIAI
+8005;Precio por unidad de medida;PRICE PER UNIT
+8006;Identificación de una pieza de artículo comercial individual;ITIP
+8007;Número de cuenta bancaria internacional (IBAN);IBAN
+8008;Fecha y hora de la producción (AAMMDDhh[mm[ss]);PROD TIME
+8009;Indicador del sensor ópticamente legible;OPTSEN
+8010;Identificador de componente / parte (CPID);CPID
+8011;Número de serie de identificador de componente / parte de (CPID DE SERIE);CPID SERIAL
+8012;Versión del software;VERSION
+8013;Número Global de Modelo (GMN);GMN
+8014;Highly Individualised Device Registration Identifier (HIDRI);MUDI
+8017;Número de Relación de Servicio Global para identificar la relación entre una organización que ofrece servicios y el proveedor de los servicios;GSRN - PROVIDER
+8018;Número de Relación de Servicio Global para identificar la relación entre una organización que ofrece servicios y el receptor de los servicios;GSRN - RECIPIENT
+8019;Número de instancia de relación de servicio (SRIN);SRIN
+8020;GLN de la empresa;REF No.
+8026;Identificación de las piezas de un artículo comercial (ITIP) contenidas en una unidad logística;ITIP CONTENT
+8030;Firma Digital (DigSig);DIGSIG
+8040;Internatinal Mobile Equipment Identity (IMEI);IMEI
+8041;Internatinal Mobile Equipment Identity 2 (IMEI2);IMEI2
+8042;Embedded SIM number;ESIM
+8043;Physical SIM number;PSIM
+8110;Identificación de código de cupón para uso en Norte América;
+8111;Puntos de fidelidad de un cupón;POINTS
+8112;Positive offer file coupon code identification for use in North America;
+8200;URL de embalaje extendido;PRODUCT URL
+90;Información de mutuo acuerdo entre socios comerciales;INTERNAL
+91;Información interna de compañía;INTERNAL
+92;Información interna de compañía;INTERNAL
+93;Información interna de compañía;INTERNAL
+94;Información interna de compañía;INTERNAL
+95;Información interna de compañía;INTERNAL
+96;Información interna de compañía;INTERNAL
+97;Información interna de compañía;INTERNAL
+98;Información interna de compañía;INTERNAL
+99;Información interna de compañía;INTERNAL

@@ -81,4 +81,12 @@ describe('uncompressed GS1 Digital Link', () => {
     expect(result.ok).toBe(false)
     expect(result.errors.map((error) => error.code)).toEqual(['invalid-value', 'invalid-value'])
   })
+
+  it('preserves and parses company-internal AI 99 query data', () => {
+    const result = parseDigitalLink('https://example.org/01/08456789000007?99=INTERNAL-REF')
+
+    expect(result.ok).toBe(true)
+    expect(result.data?.attributes).toEqual([{ ai: '99', value: 'INTERNAL-REF' }])
+    expect(result.normalizedUri).toBe('https://example.org/01/08456789000007?99=INTERNAL-REF')
+  })
 })
