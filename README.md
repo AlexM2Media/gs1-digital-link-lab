@@ -108,3 +108,15 @@ The local catalog also includes additional identifiers for analysis and manual s
 ## License
 
 Distributed under the [MIT License](LICENSE).
+
+---
+
+## Repository Activity
+
+![Alt](https://repobeats.axiom.co/api/embed/ec00c3c09b3870902d0e3ee0913221635e021211.svg "Repobeats analytics image")
+
+---
+
+**Author:** Alejandro Mateo - [@AlexM2Media](https://github.com/AlexM2Media)  
+**Repo:** [GS1 Digital Link Lab](https://github.com/AlexM2Media/gs1-digital-link-lab)  
+**Web/Portfolio:** [alexm2.media](https://alexm2.media)
