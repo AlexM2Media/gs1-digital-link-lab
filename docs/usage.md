@@ -1,76 +1,78 @@
-# Guía de uso
+# Usage Guide
 
-## Generación de URIs
+## Generating URIs
 
-La pestaña de generación permite:
+The generation tab lets you:
 
-- indicar un dominio con `https://` obligatorio,
-- introducir un GTIN válido,
-- completar calificadores y atributos comunes,
-- añadir AI adicionales desde el selector del catálogo local.
+- enter a domain; `https://` is required,
+- enter a valid GTIN,
+- fill in common qualifiers and attributes,
+- add more AIs from the local catalog selector.
 
-### Campos incluidos por defecto
+### Default fields
 
-Los principales campos del formulario son:
+The form's main fields are:
 
 - `01`: GTIN / primary identifier
-- `10`: lote
-- `21`: serial
-- `22`: variante
-- `11`, `13`, `15`, `16`, `17`: fechas
-- `3103`: peso neto
-- `3922`: precio
-- `8005`: precio por kg
+- `10`: batch or lot
+- `21`: serial number
+- `22`: variant
+- `11`, `13`, `15`, `16`, `17`: dates
+- `3103`: net weight
+- `3922`: price
+- `8005`: price per kg
 
-### Añadir AI adicionales
+### Adding more AIs
 
-El selector del catálogo permite elegir AI que no forman parte del formulario fijo. Cuando se selecciona un AI:
+The catalog selector lets you choose AIs that are not part of the fixed form. When an AI is selected:
 
-- si el valor es un cualificador de path, se incluye en el segmento de la URI,
-- si es un atributo, se añade en la query string,
-- si el tipo es incompatible o no está permitido, se reporta un error de validación.
+- path qualifiers are added to the URI path,
+- attributes are added to the query string,
+- incompatible or disallowed types produce a validation error.
 
-## Análisis de URIs
+## Analyzing URIs
 
-La pestaña de análisis acepta:
+The analysis tab accepts:
 
-- URIs GS1 Digital Link no comprimidas,
-- GTIN validos,
-- cadenas element strings tipo bracketed/FNC1,
-- entradas inválidas.
+- uncompressed GS1 Digital Link URIs,
+- valid GTINs,
+- bracketed/FNC1-style element strings,
+- invalid input.
 
-El sistema intenta detectar el formato y, si es un Digital Link válido, devuelve:
+The system attempts to detect the format and, for a valid Digital Link, returns:
 
-- la URI normalizada,
-- el AI principal,
-- calificadores y atributos ordenados,
-- los mensajes de error cuando el contenido no cumple las reglas del catálogo.
+- the normalized URI,
+- the primary AI,
+- ordered qualifiers and attributes,
+- error messages when the content does not comply with the catalog rules.
 
-## Escaneo desde cámara o imagen
+## Scanning from a camera or image
 
-La pestaña de escaneo ofrece dos rutas:
+The scanning tab offers two options:
 
-- carga de imagen local,
-- activación de cámara del dispositivo.
+- upload a local image,
+- activate the device camera.
 
-### Comportamiento
+### Behavior
 
-- Si `BarcodeDetector` está disponible, se usa como primera opción.
-- Si no está disponible, se usa ZXing local cargado bajo demanda.
-- El resultado se envía a la misma lógica de análisis que la entrada manual.
+- If `BarcodeDetector` is available, it is used first.
+- Otherwise, ZXing is loaded locally on demand.
+- The result is sent through the same analysis logic as manually entered input.
 
-## Exportación de QR
+## QR export
 
-La app genera tres formatos de salida:
+The app generates three output formats:
 
-- PNG RGB,
-- BMP monocromático,
-- SVG vectorial.
+- RGB PNG,
+- monochrome BMP,
+- vector SVG.
 
-Cada uno se puede descargar localmente con un nombre generado a partir de la URI resultante.
+Each format can be downloaded locally with a filename generated from the resulting URI.
 
-## Observaciones prácticas
+## Practical notes
 
-- El dominio debe usar HTTPS; la validación rechaza dominios no seguros.
-- La URI resultante sigue el esquema de Digital Link no comprimido con AI en path y atributos en query.
-- Las URIs comprimidas se detectan como formato, pero no están implementadas para generación ni análisis completo.
+- The domain must use HTTPS; validation rejects insecure domains.
+- The resulting URI follows the uncompressed Digital Link scheme, with AIs in the path and attributes in the query.
+- Compressed URIs are detected as a format, but full generation and analysis are not implemented.
+
+For the Spanish version, see [Guía de uso](es_ES/usage.md).

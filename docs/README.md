@@ -1,21 +1,23 @@
-# Documentación del proyecto
+# Project Documentation
 
-Esta carpeta recoge la documentación operativa y técnica útil para entender y mantener GS1 Digital Link Lab.
+This directory contains the operational and technical documentation for understanding and maintaining GS1 Digital Link Lab.
 
-## Índice
+## Contents
 
-- [architecture.md](architecture.md): visión general de la arquitectura cliente y flujo de datos.
-- [usage.md](usage.md): guía de uso de las pestañas de generación, análisis y escaneo.
-- [gs1-rules.md](gs1-rules.md): reglas GS1 aplicadas, AI soportados y límites de validación.
+- [architecture.md](architecture.md): overview of the client-side architecture and data flows.
+- [usage.md](usage.md): guide to the generation, analysis, and scanning tabs.
+- [gs1-rules.md](gs1-rules.md): applied GS1 rules, supported AIs, and validation limits.
 
-## Resumen rápido
+## Quick overview
 
-La aplicación es una SPA sin backend que se ejecuta íntegramente en el navegador. Su propósito es:
+The application is a backend-free SPA that runs entirely in the browser. It is designed to:
 
-- construir URIs GS1 Digital Link no comprimidas,
-- validarlas según reglas locales de GS1,
-- analizar y normalizar URIs entrantes,
-- leer códigos desde imagen o cámara,
-- generar QR para exportación local.
+- build uncompressed GS1 Digital Link URIs,
+- validate them against local GS1 rules,
+- analyze and normalize incoming URIs,
+- scan codes from images or a camera,
+- generate QR codes for local export.
 
-Todo el procesamiento se realiza del lado del cliente. No hay autenticación, base de datos ni transmisión a servicios externos en ejecución.
+All processing happens client-side. There is no authentication, database, or runtime transmission to external services.
+
+For the Spanish documentation, see the [Spanish documentation index](es_ES/README.md).

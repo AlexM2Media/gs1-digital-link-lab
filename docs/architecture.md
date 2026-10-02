@@ -1,42 +1,44 @@
-# Arquitectura
+# Architecture
 
-## Visión general
+## Overview
 
-La aplicación está estructurada como una SPA de navegador con responsabilidades separadas por dominio funcional.
+The application is structured as a browser-based SPA, with responsibilities separated by functional domain.
 
-### Capas principales
+### Main layers
 
-- `src/main.ts`: inicializa la UI, gestiona pestañas y eventos de interacción.
-- `src/core`: núcleo GS1 con validación, catálogo de AI, parseo de URIs y generación de QR.
-- `src/scanning`: adaptadores de lectura por imagen y cámara.
-- `src/i18n`: recursos de idioma y traducción de textos.
+- `src/main.ts`: initializes the UI and manages tabs and interaction events.
+- `src/core`: GS1 core logic for validation, the AI catalog, URI parsing, and QR generation.
+- `src/scanning`: image and camera scanning adapters.
+- `src/i18n`: language resources and text translations.
 
-## Flujo de generación
+## Generation flow
 
-1. La UI recoge el dominio HTTPS, GTIN y valores opcionales.
-2. `generationInputToDigitalLinkData()` normaliza y valida los datos.
-3. `buildDigitalLink()` construye la URI según el esquema GS1 Digital Link no comprimido.
-4. `generateQrAssets()` produce PNG, BMP y SVG.
-5. La interfaz renderiza el resultado y ofrece descarga local.
+1. The UI collects the HTTPS domain, GTIN, and optional values.
+2. `generationInputToDigitalLinkData()` normalizes and validates the input.
+3. `buildDigitalLink()` builds a URI following the uncompressed GS1 Digital Link scheme.
+4. `generateQrAssets()` produces PNG, BMP, and SVG assets.
+5. The UI renders the result and offers a local download.
 
-## Flujo de análisis
+## Analysis flow
 
-1. La entrada se valida con `detectInputFormat()`.
-2. Si es un Digital Link, se llama a `parseDigitalLink()`.
-3. Se comprueba la estructura del path y los parámetros query.
-4. Se validan los AI permitidos y se normaliza la URI.
-5. La UI muestra cada AI con su nombre localizado y su valor.
+1. The input is validated with `detectInputFormat()`.
+2. If it is a Digital Link, `parseDigitalLink()` is called.
+3. The path structure and query parameters are checked.
+4. Allowed AIs are validated and the URI is normalized.
+5. The UI displays each AI with its localized name and value.
 
-## Flujo de escaneo
+## Scanning flow
 
-1. La app intenta usar `BarcodeDetector` nativo del navegador.
-2. Si no está disponible, se carga ZXing localmente bajo demanda.
-3. La lectura de la imagen usa un `File` y la cámara usa `getUserMedia` + `video`.
-4. El resultado se reenvía a la lógica de análisis del Digital Link.
+1. The app attempts to use the browser's native `BarcodeDetector`.
+2. If it is unavailable, ZXing is loaded locally on demand.
+3. Image scanning uses a `File`; camera scanning uses `getUserMedia` and a `video` element.
+4. The result is passed to the Digital Link analysis logic.
 
-## Consideraciones de diseño
+## Design considerations
 
-- El proyecto prioriza la auto-contención: no requiere backend ni infraestructura.
-- La validación es local y explícita, centrada en el catálogo de AI del propio cliente.
-- La UI se mantiene pequeña y funcional para un MVP de laboratorio.
-- El catálogo de AI se alimenta de un CSV local y se transforma por código en definiciones de tipo `AiDefinition`.
+- The project prioritizes self-containment: it requires no backend or infrastructure.
+- Validation is local and explicit, centered on the client's own AI catalog.
+- The UI remains small and functional for a lab MVP.
+- The AI catalog is sourced from a local CSV and converted in code into `AiDefinition` objects.
+
+For the Spanish version, see [Arquitectura](es_ES/architecture.md).
